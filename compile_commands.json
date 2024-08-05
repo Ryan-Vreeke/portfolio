@@ -1,0 +1,12 @@
+[
+  {
+    "directory": "/home/ryan/source/portfolio/",
+    "arguments": [
+      "g++",
+      "-I./lib",
+      "-I./lib/includes/",
+      "-I./include"
+    ],
+    "file": "main.cpp"
+  }
+]
