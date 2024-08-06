@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <script
       src="https://unpkg.com/htmx.org@2.0.1"
       integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/"
@@ -17,13 +17,30 @@
     ></script>
   </head>
   <body>
-    <h1>Portfolio</h1>
     {{block "nav" .}}
-  
+
+    <div id="content">{{block "home" .}}</div>
   </body>
 </html>
-{{end}}
+{{end}} 
 
 {{def block "home" .}}
-<h2>Hom2</h2>
-{{end}}
+<div class="content_container">
+  <img src="home_background.jpg" id="home_background" />
+  <div class="content_header">
+    <div id="text">
+      <h2>Ryan Vreeke</h2>
+      <h4>Software Engineer</h4>
+      <p>
+        Hi, I'm Ryan Vreeke, I'm passionate about AI, computer graphics, computer vision, and
+        operating systems. I've interned at ESRI, working with WPF and .NET.
+        Check out my portfolio for a taste of my expertise.
+      </p>
+    </div>
+    <div id="picture">
+      <img src="home_background.jpg" />
+    </div>
+  </div>
+</div>
+{{end}} 
+

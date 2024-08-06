@@ -1,0 +1,16 @@
+{{def block "projects" .}}
+<div class="proj_container">
+  <h1>Projects</h1>
+
+  {{for .(4)}}{
+  <div class="proj_car">
+    <h3 class="card_name">{{.ProjName}}</h3>
+    <ul class="lang">
+      {{for .(2)}}{
+      <li>items</li>
+      }
+    </ul>
+  </div>
+  }
+</div>
+{{end}} 
